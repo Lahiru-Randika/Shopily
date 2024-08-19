@@ -81,7 +81,7 @@ const Navigation = () => {
               </div>
             </li>
             <li className='list-inline-item'>
-              <Link to="/"><Button className="navButton">Contact Us<FaAngleDown className='gap'/></Button></Link>
+              <Link to="/contact-us"><Button className="navButton">Contact Us<FaAngleDown className='gap'/></Button></Link>
             </li>
           </ul>
         </div>

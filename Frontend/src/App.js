@@ -20,6 +20,7 @@ import ProductEdit from './Admin/pages/ProductEdit/productedit.js';
 import OTPverificationCus from './Client/Pages/OTPverification/otpverificationCus.js';
 import OTPverificationSel from './Client/Pages/OTPverification/otpverificationSel.js';
 import UserHome from './Client/Pages/Userhome/userhome.js';
+import ContactUs from './Client/Pages/ContactUs/ContactUs.js';
 
 const MyContext = createContext();
 
@@ -130,6 +131,13 @@ function App() {
             />
 
             <Route path="/areulost" exact={true} element={<P404 />} />
+            <Route path="/contact-us" exact={true}   // <-- Add this new route
+              element={<>
+                <Header />
+                <ContactUs />
+                <Footer />
+              </>} 
+            />
         </Routes>
         {isOpenProduct && <ProductPopup />}
       </MyContext.Provider>
